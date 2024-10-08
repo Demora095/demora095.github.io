@@ -1,0 +1,8 @@
+document.addEventListener('keydown', function(event) {
+    // Si la touche est une lettre ou un autre caractère, on empêche l'action par défaut
+    if (event.key >= 'a' && event.key <= 'z') {
+        event.preventDefault();
+        // Ajoute ici ce que tu veux faire lorsque la touche est pressée
+        console.log('Lettre appuyée : ' + event.key);
+    }
+});
